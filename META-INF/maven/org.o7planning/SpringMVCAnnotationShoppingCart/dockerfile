@@ -1,0 +1,6 @@
+FROM tomcat:8.0
+MAINTAINER demo
+COPY C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\o7planning\SpringMVCAnnotationShoppingCart\1.0.0\SpringMVCAnnotationShoppingCart-1.0.0.war /usr/local/tomcat/webapps/SpringMVCAnnotationShoppingCart-1.0.0.war
+WORKDIR /usr/local/tomcat/webapps
+EXPOSE 8080
+CMD ["catalina.sh","run"]
